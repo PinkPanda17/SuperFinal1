@@ -29,8 +29,10 @@ namespace SuperFinal1.Controllers
         {
 
             var user = db.Users.FirstOrDefault(t => t.User2Id == ticket.User2Id);
+
     
             var newTicket = new Tickets();
+
             newTicket.Category = ticket.Category;
             newTicket.Description = ticket.Description;
             newTicket.EndDate = ticket.EndDate;
